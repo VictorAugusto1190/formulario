@@ -55,7 +55,12 @@
           <input id="mas" type="radio" name="userGender" value="Masculino" />
           <label for="mas">Masculino</label>
 
-          <input id="notinformed" type="radio" name="userGender" value="notinformed" />
+          <input
+            id="notinformed"
+            type="radio"
+            name="userGender"
+            value="notinformed"
+          />
           <label for="notinformed">Prefiro não informar</label>
           <br />
 
@@ -107,7 +112,12 @@
           <legend>Hábitos</legend>
 
           <p>Redes Sociais</p>
-          <input id="instagram" type="checkbox" name="social" value="instagram" />
+          <input
+            id="instagram"
+            type="checkbox"
+            name="social"
+            value="instagram"
+          />
           <label for="instagram">Instagram</label>
           <br />
           <input id="facebook" type="checkbox" name="social" value="facebook" />
@@ -119,7 +129,27 @@
 
           <input id="x" type="checkbox" name="social" value="X" />
           <label for="x">X</label>
+          <br />
+
+          <label for="musicStyle">Estilo musical:</label>
+          <input
+            list="styleTypes"
+            id="musicStyle"
+            name="userMusicStyle"
+            type="text"
+          />
+          <datalist id="styleTypes">
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Samba"></option>
+            <option value="Sertanejo"></option>
+          </datalist>
+          <br>
+
+          <label for="favoriteColor">Cor favorita</label>
+          <input type="color" name="userFavoriteColor" id="favoriteColor">
         </fieldset>
+
         <button type="submit">Enviar</button>
       </form>
     </section>
